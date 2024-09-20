@@ -1,0 +1,121 @@
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kanban-column {
+    min-height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    overflow: auto;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+#doing {
+    background-color: #f44336; /* Vermelho */
+}
+
+#in-progress {
+    background-color: #2196F3; /* Azul */
+}
+
+#done {
+    background-color: #4CAF50; /* Verde */
+}
+#amarelo {
+    background-color: #bcbe25; /* Verde */
+}
+
+#done {
+    background-color: #4CAF50; /* Verde */
+}
+
+#done {
+    background-color: #4CAF50; /* Verde */
+}
+
+
+.kanban-card {
+    cursor: move;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.kanban-card.completed {
+    opacity: 0.5;
+    background-color: #d4edda; /* Cor leve para indicar conclusão */
+    border: 1px solid #c3e6cb; /* Cor da borda para tarefas concluídas */
+}
+.kanban-card {
+    color: black; /* Define a cor do texto das tarefas para preto */
+}
+
+.card-body {
+    color: black; /* Define a cor do texto do corpo do cartão para preto */
+}
+
+.card-title {
+    color: black; /* Define a cor do texto do título da tarefa para preto */
+}
+
+.card-text {
+    color: black; /* Define a cor do texto da descrição da tarefa para preto */
+}
+
+.card-buttons .btn {
+    color: black; /* Define a cor do texto dos botões para preto */
+}
+/* Botão Flutuante de Suporte */
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.support-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.support-button:hover {
+    background-color: #128C7E;
+}
+/* Estilo do botão de fechar com ícone */
+.btn-close-custom {
+    background: none; /* Remove fundo padrão */
+    border: none;     /* Remove borda padrão */
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: #000;      /* Cor do ícone */
+    opacity: 0.7;     /* Transparência inicial */
+    cursor: pointer;  /* Muda o cursor ao passar sobre o botão */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-close-custom:hover {
+    opacity: 1;       /* Deixa o ícone opaco ao passar o mouse */
+}
+.kanban-card.completed {
+    background-color: #d3d3d3; /* Cinza claro */
+    color: #6c757d; /* Cor do texto para contraste */
+}
